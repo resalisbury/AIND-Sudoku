@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: naked twins occurs when a unit has exactly 2 boxes with the exact same two choices (and no additional choices).  This implies that only those two boxes can have a final value of equal to 1 of the 2 choices.  All other boxes must not contain either of those two values.  Adding in the naked twins contraint, allows us to reapply previous restraints and work towards solving the puzzle.
+
+For example [ '12', '123', '12'...] => [ '12', '3', '12'...]
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: A diagonal sudoku simply adds another unit to the existing units for which no box can contain the same value.  So the contraints themselves do not change, but the units to which the contraints are applied are increased.
 
 ### Install
 
